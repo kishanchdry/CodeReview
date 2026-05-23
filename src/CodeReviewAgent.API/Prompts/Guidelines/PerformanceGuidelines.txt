@@ -1,0 +1,5 @@
+- Avoid N+1 database queries; use batch fetching
+- Use async/await correctly; avoid .Result or .Wait()
+- Avoid unnecessary object allocations in loops
+- Cache expensive operations where appropriate
+- Use pagination for large data sets

@@ -1,0 +1,10 @@
+Review the following pull request diff and identify issues.
+Apply the coding guidelines provided.
+
+Guidelines:
+{guidelines}
+
+PR Diff:
+{diff}
+
+Return ONLY a JSON array of comments as specified. Be brief.

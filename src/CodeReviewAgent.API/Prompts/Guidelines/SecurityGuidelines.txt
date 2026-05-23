@@ -1,0 +1,6 @@
+- Never log sensitive data (passwords, tokens, PII)
+- Validate and sanitize all user inputs
+- Avoid SQL string concatenation; use parameterized queries
+- Do not expose stack traces in API responses
+- Ensure proper authentication/authorization on all endpoints
+- Avoid hardcoded secrets or credentials
