@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  codereviewagent:
+    build:
+      context: .
+      dockerfile: src/CodeReviewAgent.API/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - Git__Token=${GIT_TOKEN}
+      - Git__WebhookSecret=${WEBHOOK_SECRET}
+      - AI__ApiKey=${OPENAI_API_KEY}
+    volumes:
+      - ./src/CodeReviewAgent.API/Prompts:/app/Prompts:ro

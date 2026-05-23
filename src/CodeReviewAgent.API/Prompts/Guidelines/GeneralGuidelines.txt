@@ -1,0 +1,7 @@
+- Use meaningful variable and method names
+- Avoid magic numbers and strings; use constants or enums
+- Methods should do one thing (Single Responsibility)
+- Remove dead/commented code
+- Ensure proper null checks and error handling
+- Avoid deep nesting; prefer early returns
+- Log errors with sufficient context

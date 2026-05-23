@@ -1,0 +1,6 @@
+version: "2"
+tunnels:
+  codereview:
+    proto: http
+    addr: 8080
+    inspect: true
