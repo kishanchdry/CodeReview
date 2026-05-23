@@ -9,7 +9,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - Git__Token=${GIT_TOKEN}
-      - Git__WebhookSecret=${WEBHOOK_SECRET}
+      - Webhook__Secret=${WEBHOOK_SECRET}
       - AI__ApiKey=${OPENAI_API_KEY}
     volumes:
       - ./src/CodeReviewAgent.API/Prompts:/app/Prompts:ro
